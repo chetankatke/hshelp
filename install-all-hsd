@@ -122,7 +122,7 @@ Restart=always
 RestartSec=1
 User=root
 Environment=HSD_PREFIX=$HSDDATA
-ExecStart=${NODE} ${HOME}/hsd/bin/hsd --no-wallet
+ExecStart=${NODE} ${HOME}/hsd/bin/hsd --no-wallet --compact-tree-init-interval 10000
 
 [Install]
 WantedBy=multi-user.target
